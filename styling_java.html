@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Styling with JavaScript</title>
+    </head>
+
+    <!--Question 3 Task 3-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #box:hover {
+            background-color: lightcoral;
+        }
+
+        #change-bg-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: lightgreen;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #change-bg-button:hover {
+            background-color: rgb(100, 32, 0);
+            color: white;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .hover-box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: lightgray;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .hover-box:hover {
+            background-color: rgb(212, 0, 255);
+        }
+
+        #color-box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        #color-box:hover {
+            background-color: lightblue;
+        }
+    </style>
+    <!--Question 3 Task 1-->
+    <body>
+        <h2>Dynamic Styling</h2>
+        <div id="box" onclick="changeColor()">Click me to change color</div>
+        <button id="change-bg-button" onclick="changeBackgroundColor()">Change Page Background</button>
+
+        <div class="hover-box"></div>
+        <div class="hover-box"></div>
+        <div class="hover-box"></div>
+
+        <div id="color-box"></div>
+
+        <script src="styling_java.js"></script>
+    </body>
+</html>
